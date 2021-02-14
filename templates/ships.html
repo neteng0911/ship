@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ναυμαχία</title>
+  </head>
+  <body>
+	<p><a href='/'>Αρχική σελίδα</a></p>
+         <p>Γεια σου {{g.user[1]}}</p>
+        <p><br>Δώστε θέση στη συστοιχία LED.</p>
+        <p>(αν δώσετε στον οριζόντιο άξονα
+        τιμή πάνω από το 7 η ναυμαχία ξεκινάει από την αρχή) </br></p>
+
+	<form method = 'POST'>
+	<p> 
+	<input type='text' name='horiz'size='5' placeholder='οριζόντια' />
+	<input type='text' name='vert' size='5' placeholder='κάθετα' />
+	</p>
+	<p>
+	<button type='submit'> ΑΠΟΣΤΟΛΗ στο SenseHat </button>
+	</p>
+	</form>
+	<p><a href='/ships'>Ανανέωση</a></p>
+
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ναυμαχία</title>
+    <style>
+       #x1 {font-size:2em;}
+       #x8 {font-size:1.2em;}
+       #x9 {font-size:1.4em;}
+       #xroma {font-weight:bold}
+    </style>
+  </head>
+  
+  <body>
+    <p> Γεια σου {{g.user[1]}}</p>
+    <p> Το χρώμα σου είναι το {{g.color}}</p>
+    <p> Δώστε θέση στη συστοιχία LED<br/>
+    </p>
+    <form id="ships" method="POST">
+      <input type="text" name="orizontal" placeholder="Οριζόντια"> x
+      <input type="text" name="vertical" placeholder="Κάθετα"><br/><br/>
+      <button type="submit">ΑΠΟΣΤΟΛΗ στο Sense-ΗΑΤ</button><br/><br/>
+    </form>
+    <output form="ships" id="x0" name="x01">{{g.msg_err}}</output><br/>
+    <output form="ships" id="x1" name="x1">Στατιστικά:</output><br/>
+    <output form="ships" id="x2" name="x2">Έως τώρα έχουν χρωματιστεί:</output><br/><br/>
+    <output form="ships" id="x3" name="x3">{{g.msg_2}}</output><br/>
+    <output form="ships" id="x4" name="x4">{{g.msg_1}}</output><br/>
+    <output form="ships" id="x5" name="x5">{{g.msg_3}}</output><br/>
+    <output form="ships" id="x6" name="x6">{{g.msg_4}}</output><br/>
+    <output form="ships" id="x7" name="x7">{{g.msg_5}}</output><br/><br/>
+    <output form="ships" id="x8" name="x8">{{g.msg_b}}</output><br/>
+    <output form="ships" id="x9" name="x9">{{g.msg_win}}</output><br/>
+    <p><a href="/bonus_ships">Ανανέωση</a></p>
+    <p><a href="/">Αρχική Σελίδα</a></p>
+  </body>
+  
+</html>

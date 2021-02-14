@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--meta http-equiv="refresh"content="5"-->
+    <title>Ναυμαχία</title>
+  </head>
+  <body>
+	<p><a href='/'>Αρχική σελίδα</a></p>
+         <p>Γεια σου {{g.user[1]}}</p>
+         <p><a href='/restart'> Επανεκκίνηση του παιχνιδιού</a></p>
+        <p><br>Δώστε θέση στη συστοιχία LED.</p>
+        <p><h1 style='color:red'; >{{message_hit }}</h1></p>
+
+
+	<form method = 'POST'>
+	<p> 
+	<input type='text' name='horiz'size='4' placeholder='οριζόντια' />
+	<input type='text' name='vert' size='7' placeholder='κατακόρυφα' />
+	</p>
+	<p>
+	<button type='submit'> ΥΠΟΒΟΛΗ ΣΥΝΤΕΤΑΓΜΕΝΩΝ </button>
+	</p>
+	</form>
+	
+
+	<p><a href='/bonus_ships'>Ανανέωση</a></p>
+	<p><h3>{{ g.message }}</h3></p>
+	<p><h2>{{ g.message_score }}</h2></p>
+	<p><h2>{{ g.message1 }}</h2></p>
+	<p><h2>{{ g.message_turn }}</h2></p>
+	
+	<p><h2>{{ g.message_end }}</h2></p>
+	<p><h1> Απομένουν {{g.ships}} πλοία</h1></p>
+	<iframe src='ships.html' style="height:200px;width:300px;" title="turn"></iframe>
+	<!--<p><h1>{%for message in messages%}
+	<li> {message}</li></p></h1>
+	{% endfor %}-->
+
+    
+
+  </body>
+</html>
